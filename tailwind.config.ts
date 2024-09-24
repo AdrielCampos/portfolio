@@ -9,8 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "var(--color-background)",
+        primary: "var(--color-primary)",
+        accent: {
+          DEFAULT: "var(--color-accent)",
+          hover: "var(--color-accent-hover)",
+          foreground: "var(--color-accent-foreground)",
+        },
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)"],
