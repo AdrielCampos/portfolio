@@ -23,7 +23,7 @@ export const NumeralCard = ({
           className="text-6xl font-bold text-primary"
         />
       )}
-      <p className="text-base font-normal text-primary">{label}</p>
+      <p className="text-base font-normal text-secondary">{label}</p>
     </div>
   );
 };

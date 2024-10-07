@@ -4,20 +4,24 @@
 
 @layer base {
   :root {
-    --color-background: #f5f5f5;
-    --color-primary: #1c1c22;
-    --color-accent: #00b66d;
-    --color-accent-hover: #009e5f;
-    --color-accent-foreground: #1c1c22;
+    --color-background: 245 245 245;
+    --color-background-accent: 232 232 233;
+    --color-primary: 28 28 34;
+    --color-secondary: 99 90 97;
+    --color-accent: 0 182 109;
+    --color-accent-hover: 0 158 95;
+    --color-accent-foreground: 255 255 255;
   }
 
   .dark,
   .dark-theme {
-    --color-background: #1c1c22;
-    --color-primary: #f5f5f5;
-    --color-accent: #00ff99;
-    --color-accent-hover: #00e187;
-    --color-accent-foreground: #1c1c22;
+    --color-background: 28 28 34;
+    --color-background-accent: 40 39 44;
+    --color-primary: 245 245 245;
+    --color-secondary: 169 170 177;
+    --color-accent: 0 255 153;
+    --color-accent-hover: 0 225 135;
+    --color-accent-foreground: 28 28 34;
   }
 
   body {

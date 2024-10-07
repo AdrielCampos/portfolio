@@ -8,10 +8,9 @@ export const ThemeSwitch = () => {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="fixed bottom-4 right-4 z-50 w-12 h-12 bg-primary text-background rounded-full flex items-center justify-center"
+      className="text-primary"
     >
-      <Sun size={24} />
-      {/* {theme === "light" && <Moon size={24} />} */}
+      {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
     </button>
   );
 };

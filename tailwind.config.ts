@@ -9,18 +9,36 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--color-background)",
-        primary: "var(--color-primary)",
+        background: {
+          DEFAULT: "rgb(var(--color-background) / var(--tw-bg-opacity, 1))",
+          accent:
+            "rgb(var(--color-background-accent) / var(--tw-bg-opacity, 1))",
+        },
+        primary: "rgb(var(--color-primary) / var(--tw-bg-opacity, 1))",
+        secondary: "rgb(var(--color-secondary) / var(--tw-bg-opacity, 1))",
         accent: {
-          DEFAULT: "var(--color-accent)",
-          hover: "var(--color-accent-hover)",
-          foreground: "var(--color-accent-foreground)",
+          DEFAULT: "rgb(var(--color-accent) / var(--tw-bg-opacity, 1))",
+          hover: "rgb(var(--color-accent-hover) / var(--tw-bg-opacity, 1))",
+          foreground:
+            "rgb(var(--color-accent-foreground) / var(--tw-bg-opacity, 1))",
         },
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)"],
         mono: ["var(--font-geist-mono)"],
       },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundColor: ["active"],
+      textColor: ["active"],
+      opacity: ["active"],
+      translate: ["active"],
+      scale: ["active"],
+      boxShadow: ["active"],
+      borderWidth: ["active"],
+      borderColor: ["active"],
     },
   },
   plugins: [],

@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${geistSans.variable} ${geistMono.variable}`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-background pb-12`}
         suppressHydrationWarning
       >
         <ThemeProvider attribute="class" defaultTheme="dark">
