@@ -6,6 +6,7 @@ import { HireSection } from "@/components/hire-section";
 import { NumeralCard } from "@/components/numeral-card";
 import { Wrapper } from "@/components/wrapper";
 import { Download, Github, Linkedin } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -29,12 +30,19 @@ export default function Home() {
                   Download CV <Download size={18} />
                 </Button>
               </div>
-              <Button icon>
-                <Github size={18} />
-              </Button>
-              <Button icon>
-                <Linkedin size={18} />
-              </Button>
+              <Link target="_blank" href="https://github.com/AdrielCampos">
+                <Button icon>
+                  <Github size={18} />
+                </Button>
+              </Link>
+              <Link
+                target="_blank"
+                href="https://www.linkedin.com/in/adriel-campos-a096381b3/"
+              >
+                <Button icon>
+                  <Linkedin size={18} />
+                </Button>
+              </Link>
             </div>
           </Wrapper>
         </div>

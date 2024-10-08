@@ -108,8 +108,15 @@ export function CharacterCanvas() {
     const handleScroll = () => {
       const scroll = scrollRefContainer?.scrollTop;
       if (!scroll) return;
-      setRotationX(2 * scroll * -0.0006);
-      setRotationY(2 * scroll * -0.00075);
+
+      let newRotationX = 2 * scroll * -0.0006;
+      let newRotationY = 2 * scroll * -0.00075;
+
+      newRotationX = newRotationX < -0.72 ? -0.72 : newRotationX;
+      newRotationY = newRotationY < -0.9 ? -0.9 : newRotationY;
+
+      setRotationX(newRotationX);
+      setRotationY(newRotationY);
     };
 
     const handleResize = () => {
