@@ -60,10 +60,10 @@ export default function Home() {
             }
           />
           <NumeralCard
-            number={600}
+            number={65}
             label={
               <>
-                Code <br /> commits
+                Over <br /> contributions
               </>
             }
           />
