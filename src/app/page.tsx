@@ -25,11 +25,11 @@ export default function Home() {
               and learning new things.
             </p>
             <div className="flex flex-wrap items-center gap-6 mt-10">
-              <div className="w-full md:w-auto">
+              {/* <div className="w-full md:w-auto">
                 <Button>
                   Download CV <Download size={18} />
                 </Button>
-              </div>
+              </div> */}
               <Link target="_blank" href="https://github.com/AdrielCampos">
                 <Button icon>
                   <Github size={18} />
